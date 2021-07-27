@@ -63,16 +63,14 @@
 
             <!-- Button -->
             <div class="d-grid gap-2 text-light mt-4 bg-gray">
-                <button type="button" class="btn btn-primary">Genera tessera</button>
+                <button @click="generateCard" type="button" class="btn btn-primary">Genera tessera</button>
             </div>
 
             <!-- Card section -->
-            <section id="card" class="d-flex justify-content-center">
+            <section id="card" class="d-flex justify-content-center" :class="visibility">
                 <div class="card my-4" style="width: 18rem;">
                     <div class="d-flex justify-content-center pt-4">
                         <img :src="image" class="card-img-top" alt="user-profile">
-
-
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-center">{{ firstName }} {{ lastName }}</h5>
@@ -85,17 +83,9 @@
                         <li class="list-group-item"><strong>Professione:</strong> {{ profession }}</li>
                     </ul>
                 </div>
-
-
             </section>
-
-
         </div>
-
-
     </div>
-
-
     <script src="./js/script.js"></script>
 </body>
 

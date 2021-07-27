@@ -7,7 +7,7 @@ Vue.config.devtools = true;
 const root = new Vue({
     el: "#root",
     data: {
-        message: "Benvenuto",
+        message: "Benvenuto!",
         firstName: "",
         lastName: "",
         age: "",
@@ -15,5 +15,6 @@ const root = new Vue({
         residency: "",
         address: "",
         profession: "",
+        image: "./user-img.png",
     },
 })

@@ -23,40 +23,40 @@
             <form>
                 <div class="mt-2">
                     <!--* First name section *-->
-                    <label for="first-name">Nome:</label>
+                    <label for="first-name"><strong>Nome:</strong></label>
                     <input id="first-name" type="text" v-model="firstName">
                     <!--* Last name section *-->
-                    <label class="ms-3" for="last-name">Cognome:</label>
+                    <label class="ms-3" for="last-name"><strong>Cognome:</strong></label>
                     <input id="last-name" type="text" v-model="lastName">
                 </div>
 
                 <!--* Age section *-->
                 <div class="mt-2">
-                    <label for="age">Età:</label>
+                    <label for="age"><strong>Età:</strong></label>
                     <input id="age" type="text" v-model="age">
                 </div>
 
                 <!--* Citizenship section *-->
                 <div class="mt-2">
-                    <label for="citizenship">Cittadinanza:</label>
+                    <label for="citizenship"><strong>Cittadinanza:</strong></label>
                     <input id="citizenship" type="text" v-model="citizenship">
                 </div>
 
                 <!--* Residency section *-->
                 <div class="mt-2">
-                    <label for="residency">Residenza:</label>
+                    <label for="residency"><strong>Residenza:</strong></label>
                     <input id="residency" type="text" v-model="residency">
                 </div>
 
                 <!--* Address section *-->
                 <div class="mt-2">
-                    <label for="address">Indirizzo:</label>
+                    <label for="address"><strong>Indirizzo:</strong></label>
                     <input id="address" type="text" v-model="address">
                 </div>
 
                 <!--* Profession section *-->
                 <div class="mt-2">
-                    <label for="profession">Professione:</label>
+                    <label for="profession"><strong>Professione:</strong></label>
                     <input id="profession" type="text" v-model="profession">
                 </div>
             </form>
@@ -65,6 +65,29 @@
             <div class="d-grid gap-2 text-light mt-4 bg-gray">
                 <button type="button" class="btn btn-primary">Genera tessera</button>
             </div>
+
+            <!-- Card section -->
+            <section id="card" class="d-flex justify-content-center">
+                <div class="card my-4" style="width: 18rem;">
+                    <div class="d-flex justify-content-center pt-4">
+                        <img :src="image" class="card-img-top" alt="user-profile">
+
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{ firstName }} {{ lastName }}</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Età:</strong> {{ age }}</li>
+                        <li class="list-group-item"><strong>Cittadinanza:</strong> {{ citizenship }}</li>
+                        <li class="list-group-item"><strong>Residenza:</strong> {{ residency }}</li>
+                        <li class="list-group-item"><strong>Indirizzo:</strong> {{ address }}</li>
+                        <li class="list-group-item"><strong>Professione:</strong> {{ profession }}</li>
+                    </ul>
+                </div>
+
+
+            </section>
 
 
         </div>

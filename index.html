@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- File style css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Link to "bootstrap" -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link to "vue" -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Vue-Hello</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="container ">
+            <h1 class="my-4 text-center">{{ message }}</h1>
+            <!-- User data form -->
+            <form>
+                <div class="mt-2">
+                    <!--* First name section *-->
+                    <label for="first-name">Nome:</label>
+                    <input id="first-name" type="text" v-model="firstName">
+                    <!--* Last name section *-->
+                    <label class="ms-3" for="last-name">Cognome:</label>
+                    <input id="last-name" type="text" v-model="lastName">
+                </div>
+
+                <!--* Age section *-->
+                <div class="mt-2">
+                    <label for="age">Età:</label>
+                    <input id="age" type="text" v-model="age">
+                </div>
+
+                <!--* Citizenship section *-->
+                <div class="mt-2">
+                    <label for="citizenship">Cittadinanza:</label>
+                    <input id="citizenship" type="text" v-model="citizenship">
+                </div>
+
+                <!--* Residency section *-->
+                <div class="mt-2">
+                    <label for="residency">Residenza:</label>
+                    <input id="residency" type="text" v-model="residency">
+                </div>
+
+                <!--* Address section *-->
+                <div class="mt-2">
+                    <label for="address">Indirizzo:</label>
+                    <input id="address" type="text" v-model="address">
+                </div>
+
+                <!--* Profession section *-->
+                <div class="mt-2">
+                    <label for="profession">Professione:</label>
+                    <input id="profession" type="text" v-model="profession">
+                </div>
+            </form>
+
+            <!-- Button -->
+            <div class="d-grid gap-2 text-light mt-4 bg-gray">
+                <button type="button" class="btn btn-primary">Genera tessera</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -15,6 +15,5 @@ const root = new Vue({
         residency: "",
         address: "",
         profession: "",
-
-    }
+    },
 })
